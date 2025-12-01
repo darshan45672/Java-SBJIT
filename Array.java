@@ -12,8 +12,9 @@ class Array {
        }
        scanner.close();
 
-       for(int i = 0; i < numbers.length; i++) {
-           System.out.println("Number " + (i + 1) + ": " + numbers[i]);
-       }
+       
+for (int num : numbers) {
+  System.out.println(num);
+}
     }
 }
