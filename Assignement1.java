@@ -12,6 +12,9 @@ class Assignement1 {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
 
+        boolean validBudget = true;
+
+        while(validBudget){
         System.out.print("Enter your budget: ");
         int budget = scanner.nextInt();
 
@@ -25,6 +28,8 @@ class Assignement1 {
             System.out.println("You can take your girlfriend abroad.");
         } else {
             System.out.println("Invalid budget.");
+            validBudget = false;
+        }
         }
         scanner.close();
     }
