@@ -5,3 +5,27 @@
 // if his budget is more than 50000 he can take her abroad.
 // write a java code to help vasanth to decide where he can take his girlfriend 
 // based on his budget.
+
+import java.util.Scanner;
+
+class Assignement1 {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your budget: ");
+        int budget = scanner.nextInt();
+
+        if(budget < 1000){
+            System.out.println("You can take your girlfriend to a nearby place.");
+        } else if(budget >= 1000 && budget < 3000){
+            System.out.println("You can take your girlfriend to a hill station.");
+        } else if(budget >= 3000 && budget < 5000){
+            System.out.println("You can take your girlfriend to a beach.");
+        } else if(budget > 5000){
+            System.out.println("You can take your girlfriend abroad.");
+        } else {
+            System.out.println("Invalid budget.");
+        }
+        scanner.close();
+    }
+}
