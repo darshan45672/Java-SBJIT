@@ -9,3 +9,16 @@
 // t = number of years the money is invested for
 // Write a java code to help Ananya calculate the maturity amount based 
 // on her inputs.
+
+class Assignment2 {
+    public static void main(String[] args) {
+        double P = 10000; 
+        double r = 0.05;  
+        int n = 12;      
+        int t = 10;      
+
+        double A = P * Math.pow((1 + r / n), (n * t));
+
+        System.out.printf("The maturity amount after %d years is: %.2f\n", t, A);
+    }
+}

@@ -24,7 +24,7 @@ class Assignement1 {
             System.out.println("You can take your girlfriend to a hill station.");
         } else if(budget >= 3000 && budget < 5000){
             System.out.println("You can take your girlfriend to a beach.");
-        } else if(budget > 5000){
+        } else if(budget > 50000){
             System.out.println("You can take your girlfriend abroad.");
         } else {
             System.out.println("Invalid budget.");
