@@ -1,9 +1,19 @@
+import java.util.Scanner;
+
 class Array {
     public static void main(String[] args) {
-        int[] numbers = {10, 20, 30, 40, 50};
-        System.out.println("Elements of the array:");
-        for (int number : numbers) {
-            System.out.println(number);
-        }
+       int[] numbers = new int[5];
+
+       Scanner scanner = new Scanner(System.in);
+
+       for(int i = 0; i < numbers.length; i++) {
+           System.out.println("Enter number " + (i + 1) + ": ");
+           numbers[i] = scanner.nextInt();
+       }
+       scanner.close();
+
+       for(int i = 0; i < numbers.length; i++) {
+           System.out.println("Number " + (i + 1) + ": " + numbers[i]);
+       }
     }
 }
