@@ -1,7 +1,7 @@
 public class Animals {
-    private String habitat;
-    private String sound;
-    private int lifespan;
+    protected String habitat;
+    protected String sound;
+    protected int lifespan;
 
     public Animals(String habitat, String sound, int lifespan) {
         this.habitat = habitat;
