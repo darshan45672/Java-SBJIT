@@ -25,13 +25,13 @@ class Access {
 public class Main{
     public static void main(String[] args) {
         Access person = new Access("John", 30);
-        System.out.println("Name: " + person.name);
-        System.out.println("Age: " + person.age);
+        System.out.println("Name: " + person.getName());
+        System.out.println("Age: " + person.getAge());
 
         person.setName("Jane");
         person.setAge(25);
 
-        System.out.println("Updated Name: " + person.name);
-        System.out.println("Updated Age: " + person.age);
+        System.out.println("Updated Name: " + person.getName());
+        System.out.println("Updated Age: " + person.getAge());
     }   
 }
