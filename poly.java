@@ -18,7 +18,7 @@ public class Quad extends Poly{
         Poly polyObj = new Poly();
         polyObj.display(10);
 
-        Quad quadObj = new Quad();
+        Quad quadObj = polyObj.new Quad();
         quadObj.display(20);
         quadObj.display("Hello, World!");
     }
