@@ -35,3 +35,12 @@ class Dog extends Animals {
         System.out.println("Breed: " + breed);
     }
 }
+
+class Main {
+    public static void main(String[] args) {
+        Dog myDog = new Dog("Domestic", "Woof", 13, "Labrador");
+        myDog.sound();
+        myDog.info();
+        myDog.bark();
+    }
+}
