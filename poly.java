@@ -2,7 +2,6 @@ public class Poly{
     public void display(int number){
         System.out.println("Displaying integer: " + number);
     }
-}
 
 public class Quad extends Poly{
     @Override
@@ -13,6 +12,7 @@ public class Quad extends Poly{
     public void display(String text){
         System.out.println("Displaying string: " + text);
     }
+} 
 
     public static void main(String[] args) {
         Poly polyObj = new Poly();
@@ -20,7 +20,6 @@ public class Quad extends Poly{
 
         Quad quadObj = new Quad();
         quadObj.display(20);
-        quadObj.display("Hello, Polymorphism!");
+        quadObj.display("Hello, World!");
     }
-
 }
