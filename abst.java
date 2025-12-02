@@ -1,4 +1,4 @@
-public Class Abst {
+public class Abst {
     public abstract class Animal {
         public abstract void makeSound();
 
@@ -19,6 +19,6 @@ public Class Abst {
         Dog myDog = abst.new Dog();
         myDog.makeSound();
         myDog.sleep();
-        myDog.super.sleep();
+        // myDog.super.sleep();
     }
 }
