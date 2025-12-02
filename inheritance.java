@@ -16,3 +16,22 @@ public class Animals {
         System.out.println("Habitat: " + habitat + ", Lifespan: " + lifespan + " years");
     }
 }
+
+class Dog extends Animals {
+    private String breed;
+
+    public Dog(String habitat, String sound, int lifespan, String breed) {
+        super(habitat, sound, lifespan);
+        this.breed = breed;
+    }
+
+    public void bark(){
+        System.out.println("The dog barks: " + super.sound);
+    }
+
+    @Override
+    public void info() {
+        super.info();
+        System.out.println("Breed: " + breed);
+    }
+}
